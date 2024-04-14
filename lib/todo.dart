@@ -13,8 +13,12 @@ class Todo extends HiveObject {
   @HiveField(2)
   int dateTime;
 
+  @HiveField(3)
+  bool isDone;
+
   Todo({
     required this.title,
     required this.dateTime,
+    this.isDone = false,
   });
 }
